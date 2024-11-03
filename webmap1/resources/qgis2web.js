@@ -200,7 +200,8 @@ function onPointerMove(evt) {
                     for (var n = 0; n < clusteredFeatures.length; n++) {
                         currentFeature = clusteredFeatures[n];
                         currentFeatureKeys = currentFeature.getKeys();
-                        popupText += '<li><table>'
+                        var panpanColor = layer.get('popuplayerPanpanColor');
+                        popupText += '<li style="background: ' + panpanColor + '; padding: 10px;"><table>'
                         popupText += '<a>' + '<b>' + layer.get('popuplayertitle') + '</b>' + '</a>';
                         popupText += createPopupField(currentFeature, currentFeatureKeys, layer);
                         popupText += '</table></li>';
@@ -209,7 +210,8 @@ function onPointerMove(evt) {
             } else {
                 currentFeatureKeys = currentFeature.getKeys();
                 if (doPopup) {
-                    popupText += '<li><table>';
+                    var panpanColor = layer.get('popuplayerPanpanColor');
+                    popupText += '<li style="background: ' + panpanColor + '; padding: 10px;"><table>'
                     popupText += '<a>' + '<b>' + layer.get('popuplayertitle') + '</b>' + '</a>';
                     popupText += createPopupField(currentFeature, currentFeatureKeys, layer);
                     popupText += '</table></li>';
@@ -339,7 +341,8 @@ function onSingleClickFeatures(evt) {
                     for (var n = 0; n < clusteredFeatures.length; n++) {
                         currentFeature = clusteredFeatures[n];
                         currentFeatureKeys = currentFeature.getKeys();
-                        popupText += '<li><table>';
+                        var panpanColor = layer.get('popuplayerPanpanColor');
+                        popupText += '<li style="background: ' + panpanColor + '; padding: 10px;"><table>'
                         popupText += '<a><b>' + layer.get('popuplayertitle') + '</b></a>';
                         popupText += createPopupField(currentFeature, currentFeatureKeys, layer);
                         popupText += '</table></li>';
@@ -348,7 +351,8 @@ function onSingleClickFeatures(evt) {
             } else {
                 currentFeatureKeys = currentFeature.getKeys();
                 if (doPopup) {
-                    popupText += '<li><table>';
+                    var panpanColor = layer.get('popuplayerPanpanColor');
+                    popupText += '<li style="background: ' + panpanColor + ';  padding: 10px;"><table>'
                     popupText += '<a><b>' + layer.get('popuplayertitle') + '</b></a>';
                     popupText += createPopupField(currentFeature, currentFeatureKeys, layer);
                     popupText += '</table>';
