@@ -4,7 +4,7 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-         maxZoom: 19, minZoom: 1, projection: new ol.proj.Projection({
+         maxZoom: 19, minZoom: 5, projection: new ol.proj.Projection({
             code: 'EPSG:3857',
             //extent: [-20037508.342789, -20037508.342789, 20037508.342789, 20037508.342789],
             units: 'm'})
