@@ -41,6 +41,7 @@ var lyr_Toilet_2 = new ol.layer.Vector({
     source: jsonSource_Toilet_2,
     style: style_Toilet_2,
     popuplayertitle: "Toilet",
+    popuplayerPanpanColor: 'thistle',
     interactive: true,
     title: 'Toilet<br />\
     <img src="styles/legend/Toilet_2_0.png" />  <br />'
@@ -57,6 +58,7 @@ var lyr_SportsFacility_3 = new ol.layer.Vector({
     source: jsonSource_SportsFacility_3,
     style: style_SportsFacility_3,
     popuplayertitle: "Sports Facility",
+    popuplayerPanpanColor: 'lightskyblue',
     interactive: true,
     title: 'Sports Facility<br />\
     <img src="styles/legend/SportsFacility_3_0.png" />  <br />'
@@ -73,6 +75,7 @@ var lyr_Seating_4 = new ol.layer.Vector({
     source: jsonSource_Seating_4,
     style: style_Seating_4,
     popuplayertitle: "Seating",
+    popuplayerPanpanColor: 'peachpuff',
     interactive: true,
     title: 'Seating<br />\
     <img src="styles/legend/Seating_4_0.png" />  <br />'
@@ -89,6 +92,7 @@ var lyr_PointofInterest_5 = new ol.layer.Vector({
     source: jsonSource_PointofInterest_5,
     style: style_PointofInterest_5,
     popuplayertitle: "Point of Interest",
+    popuplayerPanpanColor: 'darkseagreen',
     interactive: true,
     title: 'Point of Interest<br />\
     <img src="styles/legend/PointofInterest_5_0.png" />  <br />'
@@ -105,6 +109,7 @@ var lyr_FoodandDrink_6 = new ol.layer.Vector({
     source: jsonSource_FoodandDrink_6,
     style: style_FoodandDrink_6,
     popuplayertitle: "Food and Drink",
+    popuplayerPanpanColor: 'sandybrown',
     interactive: true,
     title: 'Food and Drink<br />\
     <img src="styles/legend/FoodandDrink_6_0.png" />  <br />'
@@ -121,6 +126,7 @@ var lyr_Entrance_7 = new ol.layer.Vector({
     source: jsonSource_Entrance_7,
     style: style_Entrance_7,
     popuplayertitle: "Entrance",
+    popuplayerPanpanColor: 'lightpink',
     interactive: true,
     title: 'Entrance<br />\
     <img src="styles/legend/Entrance_7_0.png" />  <br />'
@@ -137,6 +143,7 @@ var lyr_CarParking_8 = new ol.layer.Vector({
     source: jsonSource_CarParking_8,
     style: style_CarParking_8,
     popuplayertitle: "Car Parking",
+    popuplayerPanpanColor: 'tan',
     interactive: true,
     title: 'Car Parking<br />\
     <img src="styles/legend/CarParking_8_0.png" />  <br />'
@@ -153,6 +160,7 @@ var lyr_BikeParking_9 = new ol.layer.Vector({
     source: jsonSource_BikeParking_9,
     style: style_BikeParking_9,
     popuplayertitle: "Bike Parking",
+    popuplayerPanpanColor: 'plum',
     interactive: true,
     title: 'Bike Parking<br />\
     <img src="styles/legend/BikeParking_9_0.png" />  <br />'
