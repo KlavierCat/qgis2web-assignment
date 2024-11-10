@@ -502,7 +502,16 @@ map.addControl(Abstract);
 
 
 //layer search
-
+var searchLayer = new SearchLayer({
+    layer: lyr_ApolloLandingSites_1,
+    colName: 'Mission',
+    zoom: 10,
+    collapsed: true,
+    map: map
+});
+map.addControl(searchLayer);
+document.getElementsByClassName('search-layer')[0].getElementsByTagName('button')[0].className += ' fa fa-binoculars';
+document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'Search feature ...';
 
 //scalebar
 
