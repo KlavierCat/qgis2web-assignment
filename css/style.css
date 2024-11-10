@@ -116,6 +116,7 @@ body.shared {
 .map-page main {
   width: 100%;
   align-items: center;
+  line-height: 1.5;
 }
 .map-page iframe {
   width: 100%;
