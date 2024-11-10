@@ -119,9 +119,10 @@ body.shared {
 }
 .map-page iframe {
   width: 100%;
-  height: 86vh;
+  height: 80vh;
 }
 .map-page nav {
+  margin-top: 30px;
   width: 100%;
 }
 .map-page a.button-link {
