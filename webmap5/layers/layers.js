@@ -3,18 +3,43 @@ ol.proj.proj4.register(proj4);
 var wms_layers = [];
 
 var lyr_LROCWACNearsidenoslewBaseMap_0 = new ol.layer.Tile({
-                            source: new ol.source.TileWMS(({
-                              url: "http://webmap.lroc.asu.edu/",
-    attributions: ' ',
-                              params: {
-                                "LAYERS": "luna_wac_nearside_noslew",
-                                "TILED": "true",
-                                "VERSION": "1.1.1"},
-                            })),
-                            title: "LROC WAC Nearside no-slew (Base Map)",
-                            opacity: 1.000000,
-                            
-                            
+  //source: new ol.source.TileWMS({
+  //  url: "http://webmap.lroc.asu.edu/",  // Base URL for the WMS service
+  //  crossOrigin: 'anonymous',  // CORS handling if necessary
+  //  params: {
+  //    "LAYERS": "luna_wac_global",  // Layer you are requesting
+  //    "FORMAT": "image/png",  // Image format (png)
+  //    "TRANSPARENT": true,  // Enable transparency
+  //    "SERVICE": "WMS",  // WMS service type
+  //    "VERSION": "1.1.1",  // WMS version
+  //    "REQUEST": "GetMap",  // WMS request type
+  //    "STYLES": "",  // No specific styles
+  //    "SRS": "IAU2000:30166,9001,0,0",  // Spatial Reference System
+  //    "BBOX": "0,0,1779097.6,1779097.6",  // Bounding box for the map extent
+  //    "WIDTH": 512,  // Width of the image (in pixels)
+  //    "HEIGHT": 512  // Height of the image (in pixels)
+  //  }
+  //}),
+  //title: "LROC WAC Global Base Map",
+  //opacity: 1.0
+  
+    source: new ol.source.TileWMS({
+    url: "http://webmap.lroc.asu.edu/",  // WMS server URL
+    params: {
+      "LAYERS": "luna_wac_color_composite",  // Layer you are requesting
+      "FORMAT": "image/png",  // Image format
+      "STYLES": "",  // No specific styles
+      "CRS": "EPSG:4326",  // Coordinate reference system (WGS 84)
+      "FEATURE_COUNT": 10,  // Limit on feature count
+      "DPI_MODE": 7,  // DPI setting for better resolution
+      "CONTEXTUALWMSLEGEND": 0,  // Legend visibility (0 = off)
+      "MAXHEIGHT": 512,  // Maximum height of image tiles
+      "MAXWIDTH": 512,  // Maximum width of image tiles
+    },
+    crossOrigin: 'anonymous',  // Handle cross-origin issues if necessary
+  }),
+  title: "LRO WAC Color Composite Mosaic (Base Map)",
+  opacity: 1.0  // Full opacity
                           });
               wms_layers.push([lyr_LROCWACNearsidenoslewBaseMap_0, 0]);
 var lyr_ExperimentalColorShadedGLD100BaseMap_1 = new ol.layer.Tile({
