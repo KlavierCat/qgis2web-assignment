@@ -471,13 +471,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'Mapping Apollo Landing Sites using QGIS with data from NASA and LROC.';
+                linkElement.innerHTML = 'Mapping Apollo Landing Sites using QGIS with data from NASA and LROC. CRS: ESRI:104903 - GCS_Moon_2000.';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = 'Mapping Apollo Landing Sites using QGIS with data from NASA and LROC.';
+            linkElement.innerHTML = 'Mapping Apollo Landing Sites using QGIS with data from NASA and LROC. CRS: ESRI:104903 - GCS_Moon_2000.';
         }
 
         titleElement.appendChild(linkElement);
