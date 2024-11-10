@@ -1,0 +1,189 @@
+/* Beginning of Shared Style */
+:root {
+  --focus-yellow: #fbff85;
+  --lighthouse-background: #003c50;
+  --gp-background: #00473e;
+  --deaf-village-background: #0693e3;
+}
+
+body.shared {
+  font-family: "Neue Helvetica", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+.shared h1,
+.shared h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+.shared a {
+  color: white;
+}
+
+.shared .icon-lg svg {
+  width: 4em;
+  height: 4em;
+}
+
+.shared a:hover {
+  outline: 1px solid var(--focus-yellow, #85e4ff);
+  outline-offset: 2px;
+}
+.shared a:focus {
+  outline: 1px solid var(--focus-yellow, #85e4ff);
+  outline-offset: 2px;
+}
+/* End of Shared Style */
+
+/* Front Page */
+.front {
+  margin: 6%;
+  min-height: 70vh;
+}
+.front .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.front h1 {
+  font-size: 2.4em;
+  margin-top: 5px;
+}
+.front p {
+  font-size: 1em;
+}
+.front-icons {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.front-icons > a {
+  display: inline-flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align the icon and text */
+  text-align: center; /* Center the text */
+  margin-right: 60px; /* Add some spacing between the anchor tags */
+  margin-bottom: 60px;
+  text-decoration: none; /* Remove underline for links */
+}
+.front-icons span {
+  text-decoration: underline;
+}
+.front-icons i {
+  margin-bottom: 10px;
+}
+.front-icons i:hover {
+  cursor: pointer;
+}
+.front-author {
+  bottom: 5%;
+}
+@media screen and (max-width: 810px) {
+  .front h1 {
+    padding-top: 0;
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 657px) {
+  .front h1 {
+    margin-top: 0;
+    font-size: 3em;
+  }
+  .front h2 {
+    font-size: 1.6em;
+  }
+  .front p {
+    font-size: 1em;
+  }
+}
+.front .attribution {
+  color: #cccccc;
+  font-size: 0.8em;
+  position: absolute;
+}
+.front .attribution a {
+  color: #cccccc;
+}
+/* End of Front Page */
+
+/* Beginning of Map Pages Style */
+.map-page {
+  margin: 20px;
+}
+.map-page header {
+  text-align: center;
+}
+.map-page main {
+  width: 100%;
+  align-items: center;
+  line-height: 1.5;
+}
+.map-page iframe {
+  width: 100%;
+  height: 80vh;
+}
+.map-page nav {
+  margin-top: 30px;
+  width: 100%;
+}
+.map-page a.button-link {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.map-page a.button-link:focus {
+  outline: 1px solid var(--focus-yellow, #85e4ff);
+  outline-offset: 1px;
+  text-decoration: underline;
+}
+.map-page a.button-link:hover {
+  outline: 1px solid var(--focus-yellow, #85e4ff);
+  outline-offset: 1px;
+  text-decoration: underline;
+}
+
+.map-page main {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.map-left {
+  width: 49%;
+  float: left;
+}
+.map-right {
+  width: 49%;
+  float: right;
+}
+
+/* style for smaller screen, and screen width <= 1200px */
+@media screen and (max-width: 1200px) {
+  .map-page nav {
+    text-align: center;
+  }
+  .map-left {
+    width: 100%;
+  }
+  .map-right {
+    width: 100%;
+  }
+}
+/* End of Map Pages Style */
+
+/* Beginning of individual map page style */
+#deaf-village-page {
+  background-color: var(--deaf-village-background, #0693e3);
+}
+
+#gp-page {
+  background-color: var(--gp-background, #00473e);
+}
+
+#gp-page iframe {
+  margin-bottom: 20px;
+}
+
+#lighthouse-page {
+  background-color: var(--lighthouse-background, #003c50);
+}
+/* End of individual map page style */

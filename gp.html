@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mapping GPs distribution in Ireland and the EU</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="map-page shared" id="gp-page">
+    <nav>
+      <a class="button-link homepage-link" href="./index.html" tabindex="0">
+        Back to Home Page
+      </a>
+    </nav>
+    <header>
+      <h1>Mapping GPs distribution in Ireland and the EU</h1>
+    </header>
+    <main>
+      <section>
+        <p>
+          The map, <strong>GPs in Ireland</strong>, visualizes the distribution
+          of General Practitioners (GPs) across Ireland by county. It includes
+          three distinct data layers, each representing a different aspect of GP
+          distribution, which you can toggle on and off using the layer control
+          in the interactive map. The three layers are:
+        </p>
+        <ol>
+          <li>GPs per 100,000 residents by county</li>
+          <li>GPs per 100 square kilometers by county</li>
+          <li>Total number of GPs by county</li>
+        </ol>
+        <p>The data was aggregated and processed using Node.js.</p>
+
+        <p>
+          For comparison, the map <strong>GPs in the EU</strong> provides an
+          overview of GP distribution across Europe, showing the number of GPs
+          per 100,000 residents by country.
+        </p>
+
+        <p>
+          This page is responsive: on larger screens, the two maps are displayed
+          side by side; on smaller screens, they stack vertically for easier
+          viewing.
+        </p>
+      </section>
+      <div class="map-left">
+        <iframe
+          src="./webmap2/map2.html"
+          title="Map of GPs distribution in the Republic of Ireland"
+        ></iframe>
+      </div>
+      <div class="map-right">
+        <iframe
+          src="./webmap3/map3.html"
+          title="Map of GPs distribution in the EU"
+        ></iframe>
+      </div>
+    </main>
+  </body>
+</html>
