@@ -20,6 +20,15 @@ body.shared {
   width: 4em;
   height: 4em;
 }
+
+.shared a:hover {
+  outline: 1px solid var(--focus-blue, #85e4ff);
+  outline-offset: 2px;
+}
+.shared a:focus {
+  outline: 1px solid var(--focus-blue, #85e4ff);
+  outline-offset: 2px;
+}
 /*End of Shared Style*/
 
 /*Front Page*/
@@ -95,14 +104,6 @@ body.shared {
 }
 .front .attribution a {
   color: #cccccc;
-}
-.front a:hover {
-  outline: 1px solid var(--focus-blue, #85e4ff);
-  outline-offset: 2px;
-}
-.front a:focus {
-  outline: 1px solid var(--focus-blue, #85e4ff);
-  outline-offset: 2px;
 }
 /*End of Front Page*/
 
