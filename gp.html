@@ -8,7 +8,7 @@
 
   <body class="map-page shared" id="gp-map">
     <nav>
-      <a class="button-link" href="./index.html" tabindex="0">
+      <a class="button-link homepage-link" href="./index.html" tabindex="0">
         Back to Home Page
       </a>
     </nav>
@@ -16,16 +16,18 @@
       <h1>Mapping GPs distribution in Ireland and the EU</h1>
     </header>
     <main>
-      <iframe
-        src="./webmap2/map2.html"
-        title="Map of GPs distribution in the Republic of Ireland"
-        class="map-left"
-      ></iframe>
-      <iframe
-        src="./webmap3/map3.html"
-        title="Map of GPs distribution in the EU"
-        class="map-right"
-      ></iframe>
+      <div class="map-left">
+        <iframe
+          src="./webmap2/map2.html"
+          title="Map of GPs distribution in the Republic of Ireland"
+        ></iframe>
+      </div>
+      <div class="map-right">
+        <iframe
+          src="./webmap3/map3.html"
+          title="Map of GPs distribution in the EU"
+        ></iframe>
+      </div>
     </main>
   </body>
 </html>

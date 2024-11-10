@@ -115,8 +115,6 @@ body.shared {
 }
 .map-page main {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 .map-page iframe {
@@ -127,7 +125,6 @@ body.shared {
   width: 100%;
 }
 .map-page a.button-link {
-  float: left;
   text-decoration: none;
   padding: 10px;
   border: 1px solid white;
@@ -145,24 +142,32 @@ body.shared {
 }
 
 #gp-map iframe {
-  width: 90%;
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1200px) {
-  .map-page main {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  #gp-map iframe {
-    width: 49%;
-  }
-  iframe.map-left {
-    align-self: left;
-  }
-  iframe.map-right {
-    align-self: right;
-  }
+.map-page main {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.map-left {
+  width: 49%;
+  float: left;
+}
+.map-right {
+  width: 49%;
+  float: right;
 }
 
+/* style for smaller screen, and screen width <= 1200px */
+@media screen and (max-width: 1200px) {
+  .map-page nav {
+    text-align: center;
+  }
+  .map-left {
+    width: 100%;
+  }
+  .map-right {
+    width: 100%;
+  }
+}
 /*End of Map Page*/
