@@ -4,11 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const deafVillageLink = document.getElementById("deaf-village-link");
   const gpLink = document.getElementById("gp-link");
   const lighthouseLink = document.getElementById("lighthouse-link");
+  const apolloLink = document.getElementById("apollo-link");
 
-  const defaultBackground = "#000000";
+  const defaultBackground = "#3c3c3c";
   const deafVillageBackground = "#0693e3";
   const gpBackground = "#00473e";
   const lighthouseBackground = "#003c50";
+  const apolloBackground = "#000000";
 
   function animateBackgroundColor(element, color, duration) {
     element.style.transition = `background-color ${duration} ease-in-out`;
@@ -54,6 +56,20 @@ document.addEventListener("DOMContentLoaded", function () {
     animateBackgroundColor(frontElement, lighthouseBackground, "0.3s")
   );
   lighthouseLink.addEventListener("blur", () =>
+    animateBackgroundColor(frontElement, defaultBackground, "0.1s")
+  );
+
+  // Apollo link hover and focus events
+  apolloLink.addEventListener("mouseenter", () =>
+    animateBackgroundColor(frontElement, apolloBackground, "0.3s")
+  );
+  apolloLink.addEventListener("mouseleave", () =>
+    animateBackgroundColor(frontElement, defaultBackground, "0.1s")
+  );
+  apolloLink.addEventListener("focus", () =>
+    animateBackgroundColor(frontElement, apolloBackground, "0.3s")
+  );
+  apolloLink.addEventListener("blur", () =>
     animateBackgroundColor(frontElement, defaultBackground, "0.1s")
   );
 });
