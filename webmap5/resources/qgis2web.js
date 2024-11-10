@@ -12,7 +12,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-78.181278, -55.594512, 74.258764, 55.645519], map.getSize());
+map.getView().fit([-56.772280, -36.641622, 78.613264, 54.087957], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -503,17 +503,6 @@ map.addControl(Abstract);
 
 //layer search
 
-var searchLayer = new SearchLayer({
-    layer: lyr_ApolloLandingSites_1,
-    colName: 'Mission',
-    zoom: 10,
-    collapsed: true,
-    map: map
-});
-map.addControl(searchLayer);
-document.getElementsByClassName('search-layer')[0].getElementsByTagName('button')[0].className += ' fa fa-binoculars';
-document.getElementsByClassName('search-layer-input-search')[0].placeholder = 'Search feature ...';
-    
 
 //scalebar
 
