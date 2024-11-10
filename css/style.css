@@ -1,6 +1,9 @@
-/*Shared Style*/
+/* Beginning of Shared Style */
 :root {
-  --focus-blue: #85e4ff;
+  --focus-yellow: #fbff85;
+  --lighthouse-background: #003c50;
+  --gp-background: #00473e;
+  --deaf-village-background: #0693e3;
 }
 
 body.shared {
@@ -22,23 +25,19 @@ body.shared {
 }
 
 .shared a:hover {
-  outline: 1px solid var(--focus-blue, #85e4ff);
+  outline: 1px solid var(--focus-yellow, #85e4ff);
   outline-offset: 2px;
 }
 .shared a:focus {
-  outline: 1px solid var(--focus-blue, #85e4ff);
+  outline: 1px solid var(--focus-yellow, #85e4ff);
   outline-offset: 2px;
 }
-/*End of Shared Style*/
+/* End of Shared Style */
 
-/*Front Page*/
+/* Front Page */
 .front {
   margin: 6%;
   min-height: 70vh;
-  background-size: 100% auto; /* Ensures the image covers the whole area */
-  background-position: center bottom; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-attachment: fixed; /* Keeps the image fixed when scrolling */
 }
 .front .container {
   display: flex;
@@ -105,9 +104,9 @@ body.shared {
 .front .attribution a {
   color: #cccccc;
 }
-/*End of Front Page*/
+/* End of Front Page */
 
-/*Beginning of Map Page*/
+/* Beginning of Map Pages Style */
 .map-page {
   margin: 20px;
 }
@@ -134,18 +133,14 @@ body.shared {
   border-radius: 10px;
 }
 .map-page a.button-link:focus {
-  outline: 1px solid var(--focus-blue, #85e4ff);
+  outline: 1px solid var(--focus-yellow, #85e4ff);
   outline-offset: 1px;
   text-decoration: underline;
 }
 .map-page a.button-link:hover {
-  outline: 1px solid var(--focus-blue, #85e4ff);
+  outline: 1px solid var(--focus-yellow, #85e4ff);
   outline-offset: 1px;
   text-decoration: underline;
-}
-
-#gp-map iframe {
-  margin-bottom: 20px;
 }
 
 .map-page main {
@@ -173,4 +168,22 @@ body.shared {
     width: 100%;
   }
 }
-/*End of Map Page*/
+/* End of Map Pages Style */
+
+/* Beginning of individual map page style */
+#deaf-village-page {
+  background-color: var(--deaf-village-background, #0693e3);
+}
+
+#gp-page {
+  background-color: var(--gp-background, #00473e);
+}
+
+#gp-page iframe {
+  margin-bottom: 20px;
+}
+
+#lighthouse-page {
+  background-color: var(--lighthouse-background, #003c50);
+}
+/* End of individual map page style */
