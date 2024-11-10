@@ -4,11 +4,13 @@
   --lighthouse-background: #003c50;
   --gp-background: #00473e;
   --deaf-village-background: #0693e3;
+  --apollo-background: #000000;
+  --default-background: #3c3c3c;
 }
 
 body.shared {
   font-family: "Neue Helvetica", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: var(--default-background, #3c3c3c);
   color: white;
 }
 .shared h1,
@@ -185,5 +187,9 @@ body.shared {
 
 #lighthouse-page {
   background-color: var(--lighthouse-background, #003c50);
+}
+
+#apollo-page {
+  background-color: var(--apollo-background, #000000);
 }
 /* End of individual map page style */

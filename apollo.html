@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mapping Apllo Landing Sites</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="map-page shared" id="apollo-page">
+    <nav>
+      <a class="button-link" href="./index.html" tabindex="0">
+        Back to Home Page
+      </a>
+    </nav>
+    <header>
+      <h1>Mapping Apollo Landing Sites</h1>
+    </header>
+    <main>
+      <section>
+        <p>
+          This interactive map presents a streamlined version of two QGIS maps
+          originally created to showcase Apollo landing sites on the Moon. Due
+          to QGIS2Web plugin limitations, which prevent integration of lunar
+          base maps via the required WMS server, the base maps are not included
+          in this adaptation.
+        </p>
+
+        <p>
+          The map features two key layers: one illustrating the major lunar
+          maria (vast, dark plains on the Moon’s surface) and another
+          pinpointing the Apollo mission landing sites. Hover over a landing
+          site to view pop-up details, including crew information and mission
+          dates. A search feature allows you to locate sites by mission name.
+          Zooming in or out may reveal additional names of notable lunar maria.
+        </p>
+
+        <p>
+          For a more comprehensive look at the original QGIS project that maps
+          the Apollo landing sites, including the base maps, visit the
+          <a
+            href="https://klaviercat.github.io/mapping-apollo-landing-sites/"
+            target="_blank"
+            >project's dedicated webpage</a
+          >.
+        </p>
+      </section>
+      <iframe
+        src="./webmap5/map5.html"
+        title="Map of Apollo Landing Sites"
+      ></iframe>
+    </main>
+  </body>
+</html>
